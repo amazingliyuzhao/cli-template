@@ -11,7 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    {{#if supportMacawAdmin}}
+    {{#if isElement}}
     "element-ui": "^2.13.0",
     {{/if}}
     "vue": "^2.5.2",

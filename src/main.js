@@ -3,7 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+{{#if isElement}}
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+{{/if}}
+import App from './App.vue';
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
