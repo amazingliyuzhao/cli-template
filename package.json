@@ -1,7 +1,7 @@
 {
-  "name": "template-vue",
-  "version": "1.0.0",
-  "description": "测试用",
+  "name": "{{projectName}}",
+  "version": "{{projectVersion}}",
+  "description": "{{projectDescription}}",
   "author": "lyz",
   "private": true,
   "scripts": {
@@ -11,6 +11,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    {{#if supportMacawAdmin}}
+    "element-ui": "^2.13.0",
+    {{/if}}
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
