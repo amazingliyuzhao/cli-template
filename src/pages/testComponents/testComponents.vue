@@ -17,34 +17,30 @@
   <br>
   loading组件
   <loading></loading>
-    <!-- <confirm v-if="confirmFlag" :config="confirmConfig"></confirm> -->
-    <!-- <testLoadig></testLoadig> -->
 
 </div>
 </template>
 <script>
 import loading from '../../components/loading/loading';
 import myButton from '../../components/button/button';
-import testLoadig from '../../components/testLoading/testLoading'
 export default{
-    data() {
-        return {
-          isDisabled:false,
-          Disabled:true
-        }
-    },
-    components:{
-        loading,
-        myButton
-        // testLoadig
-    },
-    methods: {
-handleClick(){
-  console.log(1)
-}
-    },
-    mounted () {
-
+  data() {
+    return {
+      isDisabled:false,
+      Disabled:true
     }
+  },
+  components:{
+    loading,
+    myButton
+  },
+  methods: {
+    handleClick(){
+      console.log(1)
+    }
+  },
+  mounted () {
+
+  }
 }
 </script>
