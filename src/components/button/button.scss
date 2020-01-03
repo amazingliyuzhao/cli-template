@@ -1,0 +1,85 @@
+.ui-button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 14px;
+    text-align: center;
+    a {
+        display: inline-block;
+        margin: 0 3px;
+        height: 100%;
+        font-size: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    &.disabled {
+        background-color: #F5F6F7;
+        padding: 0;
+        a {
+            color: #BBC0CB;
+        }
+        &:active {
+            background-color: #F5F6F7;
+            box-shadow: none;
+        }
+    }
+}
+
+/* Size Button Normal */
+.ui-button-normal {
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+/* Size Button large */
+.ui-button-large {
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    a {
+        // max-width: 30px - 2*15px;
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Type Button Primary */
+.ui-button-primary {
+    background-color: #2AD181;
+    a {
+        color: #FFFFFF;
+    }
+    &:active {
+        background-color: #25B871;
+        box-shadow: #25B871 0 0 0 1px;
+    }
+}
+
+/* Type Button Light */
+.ui-button-light {
+    background-color: #FFCB1B;
+    a {
+        color: #FFFFFF;
+    }
+    &:active {
+        background-color: #E6B718;
+        box-shadow: #E6B718 0 0 0 1px;
+    }
+}
+
+/* Type Button Plain */
+.ui-button-plain {
+    background-color: #DFF8EC;
+    a {
+        color: #2AD181;
+    }
+    &:active {
+        background-color: #D3EBDF;
+        box-shadow:#D3EBDF 0 0 0 1px;
+    }
+}
