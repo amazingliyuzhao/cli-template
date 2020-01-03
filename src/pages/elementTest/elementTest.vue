@@ -1,5 +1,5 @@
 <template>
-  {{#if isEslint}}
+  {{#if isElement}}
   <div class="box">
     <el-table
       :data="tableData"
